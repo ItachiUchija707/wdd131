@@ -14,7 +14,7 @@
 } */
 
 
-#course-title {
+header {
     font-weight: 200;
     font-size: 2rem;
     display: block;
@@ -50,7 +50,7 @@ h1 {
     text-align: center;
 }
 
-.card nav ul li {
+.card ul li {
     margin-top: 10px;
 }
 
