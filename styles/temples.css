@@ -52,8 +52,8 @@ p {
 }
 
 .navigation a:hover {
-    background-color: #f3f3f3;
-    color: #000080;
+    background-color: #333;
+    color: #f3f3f3;
     border: 2px solid #4950cc;
     margin: 0;
     font-weight: 700;
