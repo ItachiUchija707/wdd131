@@ -3,16 +3,15 @@
     margin: 0;
     padding: 0;
     font-family: "Roboto", sans-serif;
-    font-optical-sizing: auto;
 }
 
-body {
+/* body {
     min-width: none;
-}
+} */
 
 p {
     font-size: 1.5rem;
-    color: #4950cce2;
+    color: #4950cc;
     text-align: left;
     padding: 10px;
     font-weight: 700;
@@ -26,7 +25,7 @@ p {
 /* Full Menu View */
 .navigation {
     max-width: 800px;
-    background-color: #6a96dae2;
+    background-color: #2b64d6;
     width: 100%;
 }
 
@@ -45,7 +44,7 @@ p {
 
 .navigation li a {
     display: block;
-    color: #e8e8f2;
+    color: #f3f3f3;
     text-decoration: none;
     margin: 0;
     padding: 15px;
@@ -53,9 +52,9 @@ p {
 }
 
 .navigation a:hover {
-    background-color: #d8dde3;
-    color: #01050de2;
-    border: 2px solid transparent;
+    background-color: #f3f3f3;
+    color: navy;
+    border: 2px solid #4950cc;
     margin: 0;
     font-weight: 700;
 }
@@ -93,7 +92,7 @@ main {
 
 main figure img {
     box-sizing: border-box;
-    border: 5px solid #6884bbe2;
+    border: 5px solid #6884bb;
     width: 100%;
     max-width: 100%;
     height: auto;
@@ -108,7 +107,7 @@ figcaption {
 }
 
 footer {
-    background-color: #3b6dd0e2;
+    background-color: #2b64d6;
     margin-top: 30px;
 }
 
