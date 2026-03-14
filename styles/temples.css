@@ -1,0 +1,121 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+}
+
+body {
+    min-width: none;
+}
+
+p {
+    font-size: 1.5rem;
+    color: #4950cce2;
+    text-align: left;
+    padding: 10px;
+    font-weight: 700;
+}
+
+.hide {
+    display: none;
+}
+
+
+/* Full Menu View */
+.navigation {
+    max-width: 800px;
+    background-color: #6a96dae2;
+    width: 100%;
+}
+
+.navigation ul {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    list-style: none;
+    margin: 0 auto;
+}
+
+.navigation ul li {
+    flex: 1 1 100%;
+}
+
+.navigation li a {
+    display: block;
+    color: #e8e8f2;
+    text-decoration: none;
+    margin: 0;
+    padding: 15px;
+    text-align: center;
+}
+
+.navigation a:hover {
+    background-color: #d8dde3;
+    color: #01050de2;
+    border: 2px solid transparent;
+    margin: 0;
+    font-weight: 700;
+}
+
+/* End of mobile view */
+
+/* Menu Button */
+
+button {
+    font-size: 1.5rem;
+	border: 0;
+	background: none;
+    color: #000;
+    position: absolute;
+    right: 1rem;
+    top: 0.5rem;
+} 
+
+button::before {
+    content: "☰";
+}
+
+/* button change after being clicked */
+
+.open::before {
+    content: "❌";
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.6rem;
+    place-items: center;
+}
+
+main figure img {
+    box-sizing: border-box;
+    border: 5px solid #6884bbe2;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+h1 {
+    padding-top: 15px;
+}
+
+figcaption {
+    text-align: center;
+}
+
+footer {
+    background-color: #3b6dd0e2;
+    margin-top: 30px;
+}
+
+footer p {
+    font-weight: 500;
+    font-size: 1rem;
+    text-align: center;
+    color: #f3f3f3;
+}
+
