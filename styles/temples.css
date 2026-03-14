@@ -29,7 +29,7 @@ p {
     width: 100%;
 }
 
-.navigation ul {
+nav.navigation ul {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
