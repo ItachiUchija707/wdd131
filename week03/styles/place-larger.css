@@ -1,0 +1,64 @@
+@media screen and (min-width: 1000px) {
+
+    :root {
+    --primary-color: #00bce4;
+    --secondary-color: #0b0303;
+    --third-color: #f3f3f3;
+}
+    .weather h2::after {
+        content: " 🌥️";
+        font-size: 1.8rem;
+    }
+    
+    .weather {
+        grid-column: 3 / 4;
+        justify-self: end;
+        margin-right: 50px;
+    }
+
+    .country {
+       grid-column: 1 / 2;
+       justify-self: start;
+       margin-left: 50px;
+    }
+
+    main {
+        position: relative; 
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr; 
+        align-items: center;
+    }
+
+    picture, picture img {
+        grid-column: 1 / -1; 
+        grid-row: 1 / 2;
+        width: 100%;
+        height: auto;
+    }
+
+     .country, .weather {
+        grid-row: 1 / 2; 
+        background-color: rgba(255, 255, 255, 0.75);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        border-radius: 15px;
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+        color: var(--secondary-color);
+    }
+
+    .country h2, .weather h2 {
+        background-color: var(--primary-color);
+        color: var(--secondary-color);
+        width: 100%; 
+        padding: 15px;
+        border: none;
+        border-radius: 15px 15px 0 0;
+    }
+
+    ul {
+        padding: 20px;
+    }
+
+    .icon {
+        display: none;
+    }
+}

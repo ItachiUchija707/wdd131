@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="An overview of Honduras demographics such as area, borders, inhabitants and weather updates">
+    <meta name="author" content="Axzam Bendeck">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-larger.css">
+    <script src="scripts/place.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Honduras Overview</title>
+</head>
+<body>
+    <header>
+        <h1>Honduras</h1>
+    </header>
+    <main>
+        <picture>
+            <source srcset="images/honduras-large.webp" media="(min-width: 1000px)">
+            <source srcset="images/honduras-medium.webp" media="(min-width: 550px)">
+            <img src="images/honduras-small.webp" alt="A beatiful honduras beach landscape where palms, a resting chair and the sea on the horizon be observed" width="400" height="200">
+        </picture>
+        <div class="country demographics">
+            <h2>Data</h2>
+            <ul>
+                <li><span>Area:</span> 112,492 sq km</li>
+                <li><span>Population:</span> 10,278,345</li>
+                <li><span>Capital:</span> Tegucigalpa</li>
+                <li><span>Currency:</span> Lempira (HNL)</li>
+                <li><span>Languages:</span> Spanish</li>
+                <li><span>Time Zone:</span> UTC-6</li>
+                <li><span>Calling Code:</span> +504</li>
+                <li><span>Internet TLD:</span> .hn</li>
+            </ul>
+        </div>
+        <div class="weather">
+            <h2>Weather</h2>
+            <img src="images/weather-icon.svg" alt="Weather Icon displaying a cloud with sun shining over it" class="icon">
+            <ul>
+                <li><span>Temperature: </span><span id="temperature">10</span>°C</li>
+                <li><span>Conditions: </span><span id="conditions">Partly Cloudy</span></li>
+                <li><span>Wind: </span><span id="wind">5</span> km/h</li>
+                <li><span>Wind Chill: </span><span id="windchill"></span></li>
+            </ul>
+        </div>
+    </main>
+    <footer>
+        <p>©️<span id="currentyear"></span> Axzam Bendeck - Honduras</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
