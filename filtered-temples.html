@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A temple picture album of my favorite temples of the church of Jesus Christ of Latter-Day Saints">
+    <meta name="author" content="Axzam Bendeck">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/filtered-temples-large.css">
+    <script src="scripts/filtered-temples.js" defer></script>
+    <title>Temples Picture Album</title>
+</head>
+<body>
+    <header>
+        <h2>Temple Album</h2>
+        <button type="button" class="Open Close Menu"></button>
+        <nav class="navigation hide">
+            <ul>
+                <li class="home"><a href="#">HOME</a></li>
+                <li class="old"><a href="#">OLD</a></li>
+                <li class="new"><a href="#">NEW</a></li>
+                <li class="large"><a href="#">LARGE</a></li>
+                <li class="small"><a href="#">SMALL</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Temples</h1>
+        <div class="temple cards"></div>
+    </main>
+    <footer>
+        <p>©️<span id="currentyear"></span> Axzam Bendeck - Honduras</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

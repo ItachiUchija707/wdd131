@@ -1,0 +1,156 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+/* body {
+    min-width: none;
+} */
+
+h2 {
+    font-size: 1.5rem;
+    color: #4950cc;
+    text-align: left;
+    padding: 10px;
+}
+
+p {
+    font-size: 1rem;
+    color: #4950cc;
+    text-align: center;
+    padding: 5px;
+}
+
+.label {
+    font-weight: 900;
+}
+
+.hide {
+    display: none;
+}
+
+
+/* Full Menu View */
+.navigation {
+    max-width: 800px;
+    background-color: #2b64d6;
+    width: 100%;
+}
+
+nav.navigation ul {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    list-style: none;
+    margin: 0 auto;
+}
+
+.navigation ul li {
+    flex: 1 1 100%;
+}
+
+.navigation li a {
+    display: block;
+    color: #f3f3f3;
+    text-decoration: none;
+    margin: 0;
+    padding: 15px;
+    text-align: center;
+}
+
+.navigation a:hover {
+    background-color: #333;
+    color: #f3f3f3;
+    border: 2px solid #4950cc;
+    margin: 0;
+    font-weight: 700;
+}
+
+/* End of mobile view */
+
+/* Menu Button */
+
+button {
+    font-size: 1.5rem;
+	border: 0;
+	background: none;
+    color: #000080;
+    position: absolute;
+    right: 1rem;
+    top: 0.5rem;
+} 
+
+button::before {
+    content: "☰";
+}
+
+/* button change after being clicked */
+
+.open::before {
+    content: "❌";
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 1.6rem;
+    place-items: center;
+}
+
+.cards section {
+    background-color: rgb(131, 120, 120, 0.5);
+    border: 1px solid rgb(131, 120, 120);
+    border-radius: 10px;
+    margin: 5px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.cards section h3 {
+    margin-bottom: 15px;
+    color: #2b64d6; 
+    text-align: center;
+}
+
+.cards section p {
+    font-size: 0.9rem;
+    color: #2b64d6;      
+    padding: 2px 0;  
+    text-align: center; 
+    width: 100%;
+}
+
+.cards section img {
+    margin-top: auto;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border: 1px solid #444;
+}
+
+/* testing end */
+
+h1 {
+    padding-top: 15px;
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+
+footer {
+    background-color: #2b64d6;
+    margin-top: 30px;
+}
+
+footer p {
+    font-weight: 500;
+    font-size: 1rem;
+    text-align: center;
+    color: #f3f3f3;
+}
+
