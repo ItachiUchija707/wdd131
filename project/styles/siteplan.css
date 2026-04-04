@@ -1,0 +1,18 @@
+:root {
+    --F1-red: #e10600;
+    --carbon: #15151e;
+}
+
+h1 {
+    font-family: 'Saira Stencil One', cursive;
+    color: var(--F1-red);
+}
+
+h2 {
+    font-family: 'Ubuntu', sans-serif;
+    color: var(--F1-red);
+}
+
+p, li {
+    font-family: 'Rubik', sans-serif;
+}
