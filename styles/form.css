@@ -104,7 +104,6 @@ label, div {
     max-width: 400px;
     box-shadow: 4px 4px 4px #575656;
     background-color: var(--primary-color);
-    color: #f3f3f3;
     font-weight: 700;
 }
 
