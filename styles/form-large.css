@@ -1,0 +1,14 @@
+@media screen and (min-width: 500px) {
+
+    .productReview fieldset {
+        max-width: 420px;
+        margin: 0 auto;
+        margin-top: 30px;
+    }
+
+    #writtenReview {
+        display: block;
+    }
+
+}
+}
