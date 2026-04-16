@@ -1,0 +1,131 @@
+@media screen and (min-width: 800px) {
+    :root {
+    --F1-red: #ff1e1e;
+    --carbon: #15151e;
+    --white-color: #f3f3f3;
+    --gray-accent: #4A4A4A;
+    --charcoal: #2C2C2C;
+    --light-gray: #E0E0E0;
+    --deep-charcoal: #3C3C3C;
+    --f-yellow: #a68400;
+    --papaya: #FF8C00;
+    --headings-font: 'Saira Stencil One', cursive;
+    --subheadings-font: 'Ubuntu', sans-serif;
+    --text-font: 'Rubik', sans-serif;
+    }
+
+    .Menu {
+        display: none;
+    }
+
+    .hide {
+        display: block !important;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: row;
+        height: auto;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .navigation li {
+        flex: 1;
+    }
+
+    .team-selector {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        padding: 10px 0;
+        background-color: var(--carbon);
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr 3fr 1.5fr;
+        grid-template-areas: 
+        "news content table"
+        "news contact table"
+        ;
+        gap: 20px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    .grand-prix, .f1-drivers, .nextRace {
+        grid-area: content;
+    }
+
+    .f1-news {
+        grid-area: news;
+    }
+
+    .contact {
+        grid-area: contact;
+    }
+
+    .f1-news, aside {
+        position: sticky;
+        top: 20px;
+        align-self: start;
+        height: fit-content;
+    }
+
+    aside {
+        grid-area: table;
+        display: block;
+    }
+
+    aside table {
+        width: 100%;
+        table-layout: auto;
+        word-break: break-word;
+    }
+
+    .f1-drivers {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 10px;
+        min-width: 200px;
+    }
+
+    .driver-card:last-child {
+        grid-column: 2 / 3;
+    } 
+
+    .grand-prix {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+
+    .contact-us fieldset {
+        max-width: 420px;
+        margin: 0 auto;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .contact-us #loveF1 {
+        display: block;
+    }
+
+    .radio-experience {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        width: 100%;
+        margin-bottom: 4px;
+    }
+
+    .contact-us label.experience {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-right: 0px;
+        font-size: 0.8rem;
+    }
+ 
+}

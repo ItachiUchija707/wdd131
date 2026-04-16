@@ -1,0 +1,587 @@
+:root {
+    --F1-red: #ff1e1e;
+    --carbon: #15151e;
+    --white-color: #f3f3f3;
+    --gray-accent: #4A4A4A;
+    --charcoal: #2C2C2C;
+    --light-gray: #E0E0E0;
+    --deep-charcoal: #3C3C3C;
+    --f-yellow: #a68400;
+    --papaya: #FF8C00;
+    --headings-font: 'Saira Stencil One', cursive;
+    --subheadings-font: 'Ubuntu', sans-serif;
+    --text-font: 'Rubik', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    text-decoration: none;
+    /* border: 1px solid #e10600; */
+}
+
+
+/* themes section  */
+body.mclaren {
+    --F1-red: var(--papaya);
+}
+
+body.mclaren tbody tr:hover {
+    color: var(--carbon);
+}
+
+body.mclaren article a:hover {
+    color: var(--carbon);  
+}
+
+body.mclaren .team-selector button:hover {
+    color: var(--carbon);
+}
+body.mclaren .navigation li, a:hover {
+    color: var(--carbon);
+}
+
+body.ferrari {
+    --F1-red: #a00000;
+    --carbon: #f3f3f3;
+    --white-color: #15151e;
+    --deep-carcoal: #e0e0e0;
+}
+
+body.ferrari .navigation a {
+    color: var(--carbon);
+}
+
+body.ferrari th {
+    background-color: var(--F1-red);
+    color: #ffffff;
+}
+
+body.ferrari tbody tr:nth-child(odd) {
+    background-color: var(--f-yellow);
+    color: #000000;
+}
+
+body.ferrari tbody tr:nth-child(even) {
+    background-color: #ffffff;
+    color: var(--white-color);
+}
+
+body.ferrari .driver-card {
+    border: 5px solid var(--f-yellow);
+    margin: 20px 0px 20px 0px;
+    background-color: #d8d5d5;
+}
+
+body.ferrari form {
+    border: 1px solid var(--F1-red);
+    background-color: #15151e;
+}
+
+body.ferrari fieldset {
+    background-color: var(--gray-accent);
+    color: var(--carbon);
+    border: 2px solid var(--f-yellow);
+}
+
+body.ferrari .contact-us legend {
+    color: #f3f3f3;
+}
+
+
+body.ferrari .contact-us #button {
+    color: var(--white-color);
+}
+
+body.ferrari footer {
+    background-color: var(--white-color);
+}
+
+body.mercedes {
+    --F1-red: #00d2be;
+}
+
+body.mercedes tbody tr:hover {
+    color: var(--carbon);
+}
+
+body.mercedes article a:hover {
+    color: var(--carbon);  
+}
+
+
+/* mobile view */
+
+body {
+    background-color: var(--carbon);
+    color: var(--white-color);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+main {
+    flex: 1;
+}
+
+h1 {
+    font-family: var(--headings-font);
+    color: var(--F1-red);
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* menu styling */
+
+ul {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+li {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+a {
+    display: block;
+    text-align: center;
+    color: var(--white-color);
+    font-weight: 700;
+    font-size: 1.2rem;
+    font-family: var(--subheadings-font);
+    background-color: var(--deep-charcoal);
+    padding: 10px;
+    width: 100%;
+}
+
+.hide {
+    display: none;
+}
+
+.Menu {
+    font-size: 1.8rem;
+	border: 0;
+	background: none;
+    position: absolute;
+    right: 0.3rem;
+    top: 0.5rem;
+}
+
+.navigation li, a:hover {
+    background-color: var(--F1-red);
+    border: 3px solid var(--gray-accent);
+}
+
+.navigation a.active::after {
+    content: "📍";
+    margin-right: 20px;
+}
+
+.navigation a.active::before {
+    content: "📍";
+    margin-left: 20px;
+}
+
+.Open::before {
+    content: "❌";
+}
+
+.Close::before {
+    content: "☰";
+    color: var(--white-color);
+}
+
+/* Theme selections styling
+ */
+
+.team-selector  {
+    display: flex;
+    justify-content: space-around;
+}
+
+.team-selector button {
+    margin: 10px 0px 10px 0px;
+    width: 80px;
+    height: 40px;
+    font-family: var(--subheadings-font);
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.team-selector button:hover {
+    background-color: var(--F1-red);
+    color: var(--carbon);
+}
+
+h2 {
+    text-align: center;
+    padding: 5px;
+    color: var(--F1-red);
+    font-family: var(--subheadings-font);
+}
+
+
+p {
+    text-align: left;
+    padding: 20px;
+    margin: 0 auto;
+    font-family: var(--text-font);
+}
+
+.nextRace img {
+    width: 100%;
+    height: auto;
+    border: 5px solid var(--gray-accent);
+}
+
+#race-dates {
+    text-align: center;
+}
+
+/* F1 news styling  */
+article img {
+    width: 100%;
+    height: auto;
+    border: 5px solid var(--gray-accent);
+}
+
+article {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+article p {
+    font-weight: 700;
+    color: var(--F1-red);
+    padding: 0;
+    margin-top: 10px;
+}
+
+article h3 {
+    font-family: var(--text-font);
+    margin: 5px 10px 5px 10px;
+}
+
+article a {
+    color: var(--white-color);
+    font-size: 1rem;
+    font-family: var(--subheadings-font);
+    text-align: center;
+    background-color: transparent;
+}
+
+/* championship table styling */
+aside h2 {
+    margin-top: 20px;
+}
+aside table {
+    width: 95%;
+    margin: 10px auto;
+    border: none;
+    box-shadow: 0 0 10px var(--light-gray);
+    border-collapse: collapse;
+    border-radius: 10px;
+    overflow: hidden;
+    font-family: var(--text-font);
+}
+
+caption {
+    padding: 10px;
+    caption-side: bottom;
+    color: var(--text-font);
+    font-size: .85rem;
+}
+
+th, td {
+    padding: 4px 15px;
+    border: 1px solid var(--gray-accent);
+}
+
+th {
+    border: none;
+    font-family: var(--subheadings-font);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background-color: var(--white-color);
+    color: var(--carbon);
+    font-size: 1rem;
+}
+
+td {
+    text-align: center;
+    border-bottom: 1px solid var(--gray-accent);
+}
+
+tbody tr:nth-child(odd) {
+    background-color: var(--deep-charcoal);
+}
+
+tbody tr:hover {
+    background-color: var(--F1-red);
+    color: var(--carbon);
+}
+
+/* footer */
+footer {
+    background-color: var(--light-gray);
+    margin-top: 30px;
+}
+
+footer p {
+    font-weight: 500;
+    font-size: 1rem;
+    text-align: center;
+    color: var(--carbon);
+    padding: 8px;
+}
+
+footer p a {
+    display: inline;
+    width: auto;
+    background-color: transparent;
+    color: var(--carbon);
+    text-decoration: underline;
+    font-family: var(--text-font);
+    font-weight: 400;
+    font-size: 1rem;
+    margin: 0;
+}
+
+footer p a:hover {
+    color: var(--carbon);
+    text-decoration: none;
+    border: none;
+}
+
+
+/* races page styling */
+
+figure img {
+    width: 100%;
+    height: auto;
+    border: 5px solid var(--gray-accent)
+}
+
+figcaption {
+    text-align: center;
+    font-family: var(--text-font);
+    font-size: 1rem;
+}
+
+section h2 {
+    padding: 0;
+    margin-top: 20px;
+}
+
+section p {
+    text-align: center;
+}
+
+/* driver page styling */
+
+.driver-card {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    border: 5px solid var(--light-gray);
+    margin: 20px 0px 20px 0px;
+}
+
+.driver-card h3 {
+text-align: center;
+}
+
+.driver-card span {
+    font-weight: 700;
+}
+
+.driver-card p {
+    text-align: center;
+}
+
+.driver-card img {
+    width: 100%;
+    height: auto;
+}
+
+/* form styling  */
+
+form {
+    border: 1px solid var(--light-gray);
+    margin: 10px
+}
+
+.contact-us label, .contact-us input, .contact-us select {
+    display: block;
+    font-family: var(--text-font);
+}
+
+.contact-us p {
+    width: 100%;
+    padding-left: 0;
+    padding-bottom: 5px;
+    font-family: var(--text-font);
+}
+
+.contact-us fieldset{
+    padding: 10px;
+    border: solid var(--light-gray) 2px;
+    border-radius: 8px;
+    margin: 1rem 1rem auto;
+    background-color: var(--deep-charcoal);
+    margin-bottom: 15px;
+}
+
+.contact-us input[type="text"],
+.contact-us input[type="email"],
+.contact-us #racing,
+.contact-us #loveF1 {
+    height: 2.75rem;
+    background-color: #f3f3f3;
+    width: 100%;
+    max-width: 400px;
+    font-family: var(--text-font);
+    padding: .5rem;
+}
+
+.contact-us #racing {
+    padding: 0 10px;
+}
+
+.contact-us label.experience {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 0.79rem;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    margin-right: 21px;
+    cursor: pointer;
+    gap: 5px;
+}
+
+.contact-us .experience input[type="radio"] {
+    display: inline-block;
+    width: auto;
+    margin-top: 10px;
+    transform: scale(1.6);
+    flex-shrink: 0;
+    cursor: pointer;
+}
+
+.contact-us fieldset legend {
+    font-family: var(--subheadings-font);
+    color: var(--white-color);
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.contact-us #loveF1 {
+    height: 80px;
+    width: 100%;
+    max-width: 400px;
+    margin-top: 3px;
+    margin-bottom: 10px;
+    font-family: var(--text-font);
+}
+
+#lF1 {
+    margin-top: 10px;
+}
+
+label.f1-email {
+    padding-top: 10px;
+}
+
+.racing option {
+    height: 15rem;
+}
+
+.contact-us #button {
+    height: 2.75rem;
+    width: 96%;
+    margin: 1rem 2% 1rem 2%;
+    font-size: 1.5rem;
+    color: var(--carbon);
+    max-width: 400px;
+    box-shadow: 4px 4px 4px var(--gray-accent);
+    background-color: var(--light-gray);
+    font-weight: 700;
+    font-family: var(--subheadings-font);
+}
+
+.contact-us #button:hover {
+    background-color: var(--F1-red);
+} 
+
+div.thank-you {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    grid-column: 1 / 4;
+    padding-top: 10px;
+}
+
+.contact-us input:focus,
+.contact-us select:focus,
+.contact-us textarea:focus {
+    outline: none;
+    border: 2px solid var(--F1-red);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+}
+
+
+.references ul {
+    display: block;        
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+.references li {
+    display: list-item;    
+    list-style-type: disc; 
+    margin-bottom: 15px;
+    text-align: left;    
+    color: var(--white-color);
+    font-family: var(--text-font);
+    margin-left: 15px;
+}
+
+.references li a {
+    display: inline;       
+    background-color: transparent; 
+    padding: 0;
+    color: var(--F1-red);
+    text-decoration: underline;
+    font-size: 1.1rem;
+}
+
+.references li a:hover {
+    background-color: transparent;
+    border: none;
+    text-decoration: none;
+    color: var(--white-color);
+}
+
+.back {
+    margin-right: 20px;
+}
+
+
+
+
+
+
+
+
+
